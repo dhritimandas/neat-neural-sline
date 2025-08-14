@@ -435,7 +435,11 @@ def evaluate_genome(genome, config, episodes=3, max_steps=1000, seed=None, overf
 
 def eval_genomes(genomes, config, episodes, max_steps, seed):
     for genome_id, genome in genomes:
-        genome.fitness = evaluate_genome(genome, config, episodes, max_steps, seed)
+        fitness = evaluate_genome(genome, config, episodes, max_steps, seed)
+        # Ensure fitness is always a valid number
+        if fitness is None or not isinstance(fitness, (int, float)):
+            fitness = -10.0
+        genome.fitness = float(fitness)
         # Track generation
         genome.generation = getattr(genome, 'generation', 0)
 

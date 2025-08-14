@@ -99,6 +99,10 @@ def evaluate_genome_staged(genome, config, stage=1, episodes=3, max_steps=1000):
     
     try:
         net = neat.nn.FeedForwardNetwork.create(genome, config)
+        
+        # Ensure genome has a fitness attribute
+        if not hasattr(genome, 'fitness'):
+            genome.fitness = -100.0
         total_fitness = 0.0
         
         # Performance metrics
@@ -367,6 +371,11 @@ def run_expert_training(config_path, generations=100, episodes=3, population=150
     stats = neat.StatisticsReporter()
     pop.add_reporter(stats)
     
+    # Initialize fitness for all genomes to avoid assertion errors
+    for genome_id, genome in pop.population.items():
+        if not hasattr(genome, 'fitness') or genome.fitness is None:
+            genome.fitness = -100.0
+    
     print(f"\n{'='*60}")
     print(f"EXPERT TRAINING - STAGED LEARNING")
     print(f"{'='*60}")
@@ -386,7 +395,11 @@ def run_expert_training(config_path, generations=100, episodes=3, population=150
         print(f"\n[Generation {generation}] Stage {TRAINING_STAGE}")
         
         for genome_id, genome in pop.population.items():
-            genome.fitness = evaluate_genome_staged(genome, config, TRAINING_STAGE, episodes)
+            fitness = evaluate_genome_staged(genome, config, TRAINING_STAGE, episodes)
+            # Ensure fitness is always a valid number
+            if fitness is None or not isinstance(fitness, (int, float)):
+                fitness = -100.0
+            genome.fitness = float(fitness)
         
         # Get statistics
         fitnesses = [g.fitness for g in pop.population.values()]
