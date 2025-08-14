@@ -1,0 +1,7 @@
+numpy==1.24.3
+gym==0.26.0
+pygame==2.5.0
+matplotlib==3.7.2
+slimevolleygym==0.1.0
+box2d-py==2.3.8
+neat-python==0.92

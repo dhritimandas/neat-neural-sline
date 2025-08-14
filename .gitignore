@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Training outputs
+*.log
+nohup.out
+training.log
+expert_training.log
+quick_train.py
+
+# Temporary files
+*.tmp
+*.bak
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Model checkpoints (keep only important ones)
+models/expert_*/
+models/optimized/
+models/quick_expert/
+!models/robust/*.pkl
+
+# Keep important model files
+!models/robust/winner.pkl
+!models/robust/best_genome.pkl
+!models/robust/top*.pkl

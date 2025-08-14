@@ -1,0 +1,71 @@
+TRAINING IMPROVEMENTS TO IMPLEMENT
+==================================================
+
+Increase Win Bonus and Game Score Impact
+Priority: CRITICAL
+File: train_neat.py (Line 227)
+Change:
+  FROM: shaped_reward = float(rew) * 10.0
+  TO:   shaped_reward = float(rew) * 25.0  # Increased from 10x to 25x
+Impact: Stronger incentive to win points
+--------------------------------------------------
+
+Add Progressive Opponent Difficulty
+Priority: HIGH
+File: train_neat.py (Line 126)
+Change:
+  FROM: curriculum_level = min(1.0, 0.5 + 0.5 * (generation / 50.0))
+  TO:   curriculum_level = min(1.0, 0.3 + 0.7 * (generation / 100.0))
+Impact: Slower difficulty progression for better learning
+--------------------------------------------------
+
+Increase Ball Hit Reward
+Priority: CRITICAL
+File: train_neat.py (Line 235)
+Change:
+  FROM: shaped_reward += 10.0
+  TO:   shaped_reward += 25.0  # Increased from 10 to 25
+Impact: Much stronger reward for hitting ball
+--------------------------------------------------
+
+Add Proximity Bonus for Near Misses
+Priority: HIGH
+File: train_neat.py (Line 245)
+Change:
+  FROM: # 2. Reward for positioning
+  TO:   # Add near-miss bonus
+                if last_ball_y > 0.5 and ball_y < 0.5 and abs(ball_x - player_x) < 0.25:
+                    shaped_reward += 5.0  # Reward for being close even if missed
+Impact: Encourages getting closer to ball
+--------------------------------------------------
+
+Add Reaction Time Bonus
+Priority: MEDIUM
+File: train_neat.py (Line 235)
+Change:
+  FROM: shaped_reward += 10.0
+  TO:   shaped_reward += 10.0
+                    # Extra bonus for quick reactions
+                    if ball_on_our_side_timer < 3:
+                        shaped_reward += 5.0
+Impact: Rewards faster responses
+--------------------------------------------------
+
+Increase Population Size
+Priority: MEDIUM
+File: neat_config_slime.cfg (Line 5)
+Change:
+  FROM: pop_size                  = 500
+  TO:   pop_size                  = 1000
+Impact: More diversity for finding better solutions
+--------------------------------------------------
+
+Increase Hidden Nodes
+Priority: LOW
+File: neat_config_slime.cfg (Line 48)
+Change:
+  FROM: num_hidden                = 20
+  TO:   num_hidden                = 30
+Impact: More complex strategies possible
+--------------------------------------------------
+

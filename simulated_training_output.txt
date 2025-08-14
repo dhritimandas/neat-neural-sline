@@ -1,0 +1,169 @@
+========================================================================
+                    NEAT SLIMEVOLLEY EXPERT TRAINING                    
+========================================================================
+Mode: Standard (50 generations, 100 population, 3 episodes)
+========================================================================
+
+🚀 Starting Expert Training...
+
+Training output:
+----------------
+
+📊 [Generation 0] Stage 1
+💪 Best Fitness: 45.23
+🎾 Avg Fitness: 12.45
+🎾 Avg Hits/Game: 0.02
+🏅 Avg Win Rate: 0.0%
+
+📊 [Generation 1] Stage 1
+💪 Best Fitness: 89.12
+🎾 Avg Fitness: 34.67
+🎾 Avg Hits/Game: 0.08
+🏅 Avg Win Rate: 0.0%
+
+📊 [Generation 2] Stage 1
+💪 Best Fitness: 156.34
+🎾 Avg Fitness: 67.89
+🎾 Avg Hits/Game: 0.15
+🏅 Avg Win Rate: 0.0%
+⚡ [STAGE 1] HIT! Distance=0.142
+
+📊 [Generation 3] Stage 1
+💪 Best Fitness: 234.56
+🎾 Avg Fitness: 98.23
+🎾 Avg Hits/Game: 0.24
+🏅 Avg Win Rate: 0.0%
+⚡ [STAGE 1] HIT! Distance=0.098
+⚡ [Episode 2] Ball hits: 1
+
+📊 [Generation 4] Stage 1
+💪 Best Fitness: 312.45
+🎾 Avg Fitness: 145.67
+🎾 Avg Hits/Game: 0.38
+🏅 Avg Win Rate: 0.0%
+⚡ [STAGE 1] HIT! Distance=0.087
+⚡ [Episode 1] Ball hits: 2
+
+📊 [Generation 5] Stage 1
+💪 Best Fitness: 389.23
+🎾 Avg Fitness: 198.45
+🎾 Avg Hits/Game: 0.52
+🏅 Avg Win Rate: 0.0%
+⚡ [STAGE 1] HIT! Distance=0.076
+⚡ [Episode 3] Ball hits: 3
+
+📈 🎯 STAGE TRANSITION: Moving to Stage 2 (Positioning)
+
+📊 [Generation 6] Stage 2
+💪 Best Fitness: 456.78
+🎾 Avg Fitness: 234.56
+🎾 Avg Hits/Game: 0.68
+🏅 Avg Win Rate: 0.0%
+
+📊 [Generation 7] Stage 2
+💪 Best Fitness: 523.45
+🎾 Avg Fitness: 289.34
+🎾 Avg Hits/Game: 0.84
+🏅 Avg Win Rate: 2.3%
+
+📊 [Generation 8] Stage 2
+💪 Best Fitness: 612.34
+🎾 Avg Fitness: 345.67
+🎾 Avg Hits/Game: 1.12
+🏅 Avg Win Rate: 5.6%
+
+📊 [Generation 9] Stage 2
+💪 Best Fitness: 734.56
+🎾 Avg Fitness: 412.89
+🎾 Avg Hits/Game: 1.45
+🏅 Avg Win Rate: 8.9%
+
+📊 [Generation 10] Stage 2
+💪 Best Fitness: 856.78
+🎾 Avg Fitness: 489.23
+🎾 Avg Hits/Game: 1.78
+🏅 Avg Win Rate: 12.4%
+
+📊 [Generation 11] Stage 2
+💪 Best Fitness: 978.45
+🎾 Avg Fitness: 567.89
+🎾 Avg Hits/Game: 2.15
+🏅 Avg Win Rate: 18.7%
+
+📈 🎯 STAGE TRANSITION: Moving to Stage 3 (Winning)
+
+📊 [Generation 12] Stage 3
+💪 Best Fitness: 1123.67
+🎾 Avg Fitness: 645.34
+🎾 Avg Hits/Game: 2.34
+🏅 Avg Win Rate: 24.5%
+
+📊 [Generation 13] Stage 3
+💪 Best Fitness: 1289.45
+🎾 Avg Fitness: 734.56
+🎾 Avg Hits/Game: 2.56
+🏅 Avg Win Rate: 31.2%
+✅ [STAGE 3] WIN!
+
+📊 [Generation 14] Stage 3
+💪 Best Fitness: 1456.78
+🎾 Avg Fitness: 823.45
+🎾 Avg Hits/Game: 2.78
+🏅 Avg Win Rate: 38.6%
+✅ [STAGE 3] WIN!
+✅ [STAGE 3] WIN!
+
+📊 [Generation 15] Stage 3
+💪 Best Fitness: 1634.23
+🎾 Avg Fitness: 912.67
+🎾 Avg Hits/Game: 2.95
+🏅 Avg Win Rate: 45.3%
+
+📊 [Generation 20] Stage 3
+💪 Best Fitness: 2145.67
+🎾 Avg Fitness: 1234.56
+🎾 Avg Hits/Game: 3.12
+🏅 Avg Win Rate: 52.8%
+
+📊 [Generation 25] Stage 3
+💪 Best Fitness: 2678.34
+🎾 Avg Fitness: 1567.89
+🎾 Avg Hits/Game: 3.28
+🏅 Avg Win Rate: 61.4%
+
+📊 [Generation 30] Stage 3
+💪 Best Fitness: 3234.56
+🎾 Avg Fitness: 1912.45
+🎾 Avg Hits/Game: 3.41
+🏅 Avg Win Rate: 68.7%
+
+📊 [Generation 35] Stage 3
+💪 Best Fitness: 3812.67
+🎾 Avg Fitness: 2267.89
+🎾 Avg Hits/Game: 3.52
+🏅 Avg Win Rate: 72.3%
+
+📊 [Generation 40] Stage 3
+💪 Best Fitness: 4423.45
+🎾 Avg Fitness: 2634.56
+🎾 Avg Hits/Game: 3.61
+🏅 Avg Win Rate: 74.8%
+
+📊 [Generation 45] Stage 3
+💪 Best Fitness: 5067.89
+🎾 Avg Fitness: 3012.34
+🎾 Avg Hits/Game: 3.68
+🏅 Avg Win Rate: 76.2%
+
+🏆 EXPERT LEVEL ACHIEVED!
+Win Rate: 76.2%
+Hits/Game: 3.68
+
+========================================================================
+                         TRAINING COMPLETE                              
+========================================================================
+✅ Model saved: models/expert_20250814_112120/best_genome.pkl
+Final Fitness: 5067.89
+Final Hits/Game: 3.68
+Final Win Rate: 76.2%
+========================================================================
